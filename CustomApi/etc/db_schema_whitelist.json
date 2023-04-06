@@ -1,0 +1,13 @@
+{
+    "magenest_custom_api": {
+        "column": {
+            "customer_id": true,
+            "customer_name": true,
+            "email": true,
+            "number": true
+        },
+        "constraint": {
+            "PRIMARY": true
+        }
+    }
+}

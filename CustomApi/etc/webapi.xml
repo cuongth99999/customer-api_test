@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../app/code/Magento/Webapi/etc/webapi.xsd">
+    <route method="POST" url="/V1/custom/custom-api/">
+        <service class="Magenest\CustomApi\Api\CustomInterface" method="getPost"/>
+        <resources>
+            <resource ref="anonymous"/>
+        </resources>
+    </route>
+
+    <!-- get customer Api -->
+    <route url="/V1/get/customer/" method="GET">
+        <service class="Magenest\CustomApi\Api\GetCustomerInterface" method="getData" />
+        <resources>
+            <resource ref="anonymous" />
+        </resources>
+    </route>
+
+    <!-- get customer Api by Customer Id -->
+    <route url="/V1/get/customer/:id" method="GET">
+        <service class="Magenest\CustomApi\Api\GetCustomerByIdInterface" method="getDataById" />
+        <resources>
+            <resource ref="anonymous" />
+        </resources>
+    </route>
+
+    <!-- POST customer Api -->
+    <route url="/V1/post/customer/" method="POST">
+        <service class="Magenest\CustomApi\Api\PostCustomerInterface" method="setData"/>
+        <resources>
+            <resource ref="anonymous"/>
+        </resources>
+    </route>
+
+    <!-- Delete customer by id Api -->
+    <route url="/V1/delete/customer/:id" method="GET">
+        <service class="Magenest\CustomApi\Api\DeleteCustomerInterface" method="deleteDataById"/>
+        <resources>
+            <resource ref="anonymous"/>
+        </resources>
+    </route>
+</routes>
