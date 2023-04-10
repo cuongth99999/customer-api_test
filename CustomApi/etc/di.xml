@@ -9,5 +9,7 @@
     <preference for="Magenest\CustomApi\Api\PostCustomerInterface" type="Magenest\CustomApi\Model\Api\PostCustomer" />
 
     <preference for="Magenest\CustomApi\Api\DeleteCustomerInterface" type="Magenest\CustomApi\Model\Api\DeleteCustomer" />
+
+    <preference for="Magenest\CustomApi\Api\EditCustomerInterface" type="Magenest\CustomApi\Model\Api\EditCustomer" />
 </config>
 

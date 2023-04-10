@@ -38,4 +38,12 @@
             <resource ref="anonymous"/>
         </resources>
     </route>
+
+    <!-- Edit customer by id Api -->
+    <route url="/V1/edit/customer/:id" method="POST">
+        <service class="Magenest\CustomApi\Api\EditCustomerInterface" method="editDataById"/>
+        <resources>
+            <resource ref="anonymous"/>
+        </resources>
+    </route>
 </routes>
